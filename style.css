@@ -1,0 +1,223 @@
+/**
+ * Default style definitions for DokuWiki plugin database2
+ *
+ * This file is part of DokuWiki plugin database2 and is available under
+ * GPL version 2. See the following URL for a copy of this license!
+ *
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ *
+ * @author Thomas Urban <soletan@nihilum.de>
+ * @version 0.1
+ * @copyright GPLv2
+ *
+ */
+
+
+.database2-disabled
+{
+	font-style: italic;
+	text-align: center;
+	margin: 1em;
+}
+
+table.database2
+{
+	border-collapse: collapse;
+}
+
+table.database2 tr.data-list
+{
+}
+
+table.database2 tr.data-list table
+{
+	border-collapse: collapse;
+	border-right: 1px solid #eeeeee;
+}
+
+table.database2 tr.data-list table thead
+{
+	color: white;
+}
+
+table.database2 tr.data-list table thead th
+{
+	background: #334499;
+	padding: 1px 4px;
+	text-align: center;
+}
+
+table.database2 tr.data-list table thead th.counter
+{
+	background: transparent;
+	border-right: 1px solid #334499;
+}
+
+table.database2 tr.data-list table thead th.commands
+{
+	border-right: 1px solid #334499;
+}
+
+table.database2 tr.data-list table tbody tr.last td
+{
+	border-bottom: 1px solid #eeeeee;
+}
+
+table.database2 tr.data-list table tbody tr.last td.counter
+{
+	border-bottom: none;
+	padding-bottom: 1px;
+}
+
+table.database2 tr.data-list table tbody tr.odd td
+{
+	background: #ffffff;
+}
+
+table.database2 tr.data-list table tbody tr.even td
+{
+	background: #f8f8f8;
+}
+
+table.database2 tr.data-list table tbody td
+{
+	padding: 0 3px;
+
+	border-left: 1px solid #eeeeee;
+
+	font-size: 100% !important;
+}
+
+table.database2 tr.data-list table tbody td.counter
+{
+	color: #aaaaaa;
+	background: transparent !important;
+
+	border-left: none;
+
+	text-align: right;
+}
+
+table.database2 tr.data-list table tbody td.commands
+{
+	border-left: none;
+
+	white-space: nowrap;
+
+	text-align: right;
+}
+
+table.database2 tr.data-list table tbody td.commands input.icon-cmd
+{
+	position: relative;
+	top: 2px;
+}
+
+table.database2 tr.data-list table tbody td.commands input.hidden
+{
+	display: none;
+}
+
+table.database2 tr.data-list table tbody td.integer
+{
+	text-align: right;
+}
+
+table.database2 tr.data-list table tbody td.bool
+{
+	text-align: center;
+}
+
+div.dokuwiki table.inline td.commands
+{
+    white-space: nowrap;
+    text-align: right;
+}
+
+
+
+table.database2 input.pure-text
+{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 10pt;
+	font-weight: bold;
+
+	background: transparent;
+	color: black;
+
+	cursor: pointer;
+}
+
+table.database2 input.pure-text.selected
+{
+	color: #ff6600;
+}
+
+table.database2 input.pure-text:hover
+{
+	color: #ff6600;
+	text-decoration: underline;
+}
+
+table.database2 tr.lower-navigation td
+{
+	text-align: right;
+}
+
+
+
+
+/*
+ * filter-related styles
+ */
+
+table.database2 tr.filter
+{
+	text-align: center;
+}
+
+table.database2 tr.filter span.filter-component
+{
+	white-space: nowrap;
+}
+
+table.database2 tr.filter span.commands
+{
+	white-space: nowrap;
+}
+
+table.database2 tr.filter span.commands input
+{
+	position: relative;
+	top: 0.2em;
+}
+
+
+
+
+
+
+
+
+table.database2-single-editor tr.local-error td
+{
+	color: red;
+	padding-top: 0px !important;
+	padding-bottom: 1em !important;
+}
+
+table.database2-single-editor tr td.label
+{
+	text-align: right;
+	padding: 3px 1em 0px 1em;
+}
+
+table.database2-single-editor tr td.field
+{
+	padding: 3px 1em 0px 0px;
+}
+

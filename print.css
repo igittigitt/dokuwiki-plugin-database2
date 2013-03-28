@@ -1,0 +1,86 @@
+table.database2 input.icon-cmd
+{
+	display: none;
+}
+
+table.database2 tr.filter .commands
+{
+	text-align: center;
+}
+
+table.database2 tr.filter .commands
+{
+	display: none;
+}
+
+table.database2 tr.filter .filter-component
+{
+	padding: 2px;
+	border: 1px solid black;
+}
+
+table.database2 tr.filter .unused
+{
+	display: none;
+}
+
+table.database2 tr.filter select
+{
+	border: none;
+}
+
+table.database2 tr.filter input
+{
+	border: none;
+}
+
+table.database2 th.label input
+{
+	display: none;
+}
+
+
+
+
+/*
+ * style specific to database2 internal print version
+ */
+
+body.print table
+{
+	border-collapse: collapse;
+
+	color: black;
+}
+
+body.print table thead th
+{
+	background: #dddddd;
+
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+body.print table tbody td
+{
+	padding: 1px 2px;
+
+	border-left: 1px solid #cccccc;
+}
+
+body.print table tbody td.counter
+{
+	border-left: none;
+	text-align: right;
+}
+
+body.print table tbody td.integer
+{
+	text-align: right;
+}
+
+body.print table tbody a
+{
+	text-decoration: none;
+	color: black;
+}
