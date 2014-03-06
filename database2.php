@@ -398,7 +398,7 @@ class Database2
 			$dsn = substr( $dbPath, 1 );
 		else if ( ( $dbPath[0] == '/' ) && !self::getConf( 'useslash' ) &&
 				  is_dir( dirname( $dbPath ) ) &&
-				  !preg_match( '%(\.\.)|(^\/(etc)\/)%', $dbPath ) )
+				  !preg_match( '#(\.\.)|(^\/(etc)\/)#', $dbPath ) )
 			$dsn = 'sqlite:' . $dbPath;
 		else
 			$dsn = 'sqlite:' . metaFN( $dbPath, '.db' );
@@ -476,7 +476,7 @@ class Database2
 
 			if ( strpos( $this->driver, 'mysql' ) !== false )
 				// ensure to use proper encoding on talking to MySQL RDBMSs
-				// NOTE: according to server setup this may result in UTF-8 bytes 
+				// NOTE: according to server setup this may result in UTF-8 bytes
 				//       being UTF-8 encoded, thus resulting in usual "garbage"
 				// TODO: add option for selecting whether using UTF8-mapping here
 				$this->db->query( 'SET NAMES UTF8' );
@@ -610,7 +610,7 @@ class Database2
 				{
 
 					$pattern = trim( $pattern );
-					if ( preg_match( '�^/.+/\w*$�', $pattern ) )
+					if ( preg_match( '#^/.+/\w*$#', $pattern ) )
 						$match = preg_match( $pattern, $pageID );
 					else
 						$match = fnmatch( $pattern, $pageID );
@@ -4753,8 +4753,8 @@ EOT
 	{
 
 		$formats = array(
-						'�^(\d{4})/(\d+)/(\d+)$�' => array( 'year', 'month', 'day' ),
-						'�^(\d+)/(\d+)/(\d+)$�'   => array( 'month', 'day', 'year' ),
+						'#^(\d{4})/(\d+)/(\d+)$#' => array( 'year', 'month', 'day' ),
+						'#^(\d+)/(\d+)/(\d+)$#'   => array( 'month', 'day', 'year' ),
 						'/^(\d+)-(\d+)-(\d+)$/'   => array( 'year', 'month', 'day' ),
 						'/^(\d+)\.(\d+)\.(\d+)$/' => array( 'day', 'month', 'year' ),
 						);
@@ -5061,7 +5061,7 @@ EOT
 							'file' => substr( $value, $b + 1 ),
 							);
 
-				if ( !preg_match( '�^[a-z0-9-]+/[+a-z0-9-]+$�i', $temp['mime'] ))
+				if ( !preg_match( '#^[a-z0-9-]+/[+a-z0-9-]+$#i', $temp['mime'] ))
 					// externally provided file --> don't touch
 					return true;
 
@@ -5583,7 +5583,7 @@ EOT
 					$temp = preg_replace( '/\s+/', '', $value );
 					$temp = preg_replace( '/\(([^)]+)\)/', '\1', $temp );
 
-					if ( !preg_match( '�^\+?(\d+(([-/]|/-)\d+)*)+$�', $temp ) )
+					if ( !preg_match( '#^\+?(\d+(([-/]|/-)\d+)*)+$#', $temp ) )
 						throw new Exception( $this->getLang( 'badphonefax' ) );
 
 				}
@@ -6032,7 +6032,7 @@ EOT;
 
 					$value = p_render( 'xhtml', p_get_instructions( $value ), $info );
 
-					if ( preg_match( '�^<p>((.|\n)+)</p>$�i', trim( $value ), $matches ) )
+					if ( preg_match( '#^<p>((.|\n)+)</p>$#i', trim( $value ), $matches ) )
 						$value = $matches[1];
 
 				}
