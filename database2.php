@@ -1541,7 +1541,7 @@ EOT
 		else
 		{
 
-			$query = preg_replace( '�^SELECT .+ (FROM .+)$�i',
+			$query = preg_replace( '/^SELECT .+ (FROM .+)$/i',
 								   'SELECT COUNT(*) \1', $customQuery );
 
 			if ( stripos( $query, ' WHERE ' ) !== false )
@@ -3775,7 +3775,7 @@ EOT;
 					case 'enum' :
 						// get set of selectable enumeration elements provided
 						// after type name separated by slash or semicolon
-						$options['selectables'] = preg_split( '�[/;]+�', strtok( '' ) );
+						$options['selectables'] = preg_split( '#[/;]+#', strtok( '' ) );
 
 						$max = 0;
 						foreach ( $options['selectables'] as &$selectable )
