@@ -1888,7 +1888,7 @@ EOT
 						if ( $this->isAuthorizedMulti( $rowACL, $this->options,
 													   'may' . $clickAction ) )
 						{
-							$cell = '<a href="#" onclick="return !!$(\'' .
+							$cell = '<a href="#" onclick="return !!document.getElementById(\'' .
 									$this->varname( 'cmd' . $clickAction, $rowid ) .
 									'\').click();">' . $cell . '</a>';
 							$clicks[] = $clickAction;
