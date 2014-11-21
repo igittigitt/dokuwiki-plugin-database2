@@ -210,7 +210,7 @@ class Database2
 		if ( $this->integrator instanceof DokuWiki_Syntax_Plugin )
 		{
 
-			$value = $this->integrator->getConf( $name );
+			$value = $this->integrator->getConf( $name, null );
 			if ( is_null( $value ) )
 				if ( !is_null( $conf[$name] ) )
 					$value = $conf[$name];
