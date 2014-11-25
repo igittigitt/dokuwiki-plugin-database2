@@ -1,0 +1,7 @@
+base   database2
+author Thomas Urban
+email  soletan@nihilum.de
+date   2014-11-26
+name   database2
+desc   Provides integration of data organized in tables
+url    http://wiki.nihilum.de/software:database2
