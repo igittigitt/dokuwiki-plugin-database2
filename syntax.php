@@ -244,5 +244,3 @@ class syntax_plugin_database2 extends DokuWiki_Syntax_Plugin
 	}
 }
 
-
-?>
