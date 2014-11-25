@@ -52,14 +52,7 @@ class syntax_plugin_database2 extends DokuWiki_Syntax_Plugin
 
 	public function getInfo()
 	{
-		return array(
-				'author' => 'Thomas Urban',
-				'email'  => 'soletan@nihilum.de',
-				'date'   => '2009-11-18',
-				'name'   => 'database2',
-				'desc'   => 'Provides integration of data organized in tables',
-				'url'    => 'http://wiki.nihilum.de/software:database2',
-			);
+		return confToHash(dirname(__FILE__).'/plugin.info.txt');
 	}
 
 	public function getType()
