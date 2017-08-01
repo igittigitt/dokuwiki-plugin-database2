@@ -315,10 +315,6 @@ class Database2
 
 	protected function &getSession()
 	{
-
-		if ( !@session_start() )
-			throw new Exception( 'getSession: no session management' );
-
 		if ( !is_array( $_SESSION['database2'] ) )
 			$_SESSION['database2'] = array();
 
@@ -6191,5 +6187,4 @@ class Database2_Admin extends Database2
 	}
 }
 
-
-?>
+// vim:ts=4:sw=4:et:

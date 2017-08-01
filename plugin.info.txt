@@ -1,7 +1,7 @@
 base   database2
-author Thomas Urban
-email  soletan@nihilum.de
-date   2014-11-26
-name   database2
-desc   Provides integration of data organized in tables
-url    http://wiki.nihilum.de/software:database2
+author Oliver Geisen
+email  oliver@rehkopf-geisen.de
+date   2017-08-01
+name   database2 plugin
+desc   Integration of database2 into DokuWiki as syntax plugin
+url    https://github.com/igittigitt/dokuwiki-plugin-database2
