@@ -1,8 +1,6 @@
 <?php
-
-
+$lang['usingdevel'] = 'You are currently using the development-version of database2 library';
 $lang['menu'] = 'Database2 local DB console';
-
 $lang['tagdisabled'] = 'Embedding tables with database2 here is disabled in this wiki\'s configuration!';
 $lang['nodblink'] = 'No link to database: %s';
 $lang['nocolmeta'] = 'missing meta information on columns';
@@ -158,7 +156,6 @@ $lang['hidden'] = 'hidden';	// used to list hidden fields in a record
 $lang['NULL'] = 'NULL';		// used to list unset values
 $lang['none'] = 'none';		// used to mark missing file
 $lang['printtitle'] = 'Print version of table %s';
-
 $lang['consoleoff'] = 'Console is disabled in configuration!';
 $lang['consolesession'] = 'Session data is not available, thus history is disabled!';
 $lang['consolegoodresult'] = 'Query okay, empty result';
