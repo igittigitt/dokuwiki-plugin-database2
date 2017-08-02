@@ -11,13 +11,9 @@
 if (!defined('DOKU_INC')) die();
 
 class syntax_plugin_database2 extends DokuWiki_Syntax_Plugin {
-
 	protected $dbName;
-
 	protected $tableName;
-
 	protected $options = array();
-
 
     /**
      * @return string Syntax mode type
